@@ -1,0 +1,52 @@
+set_property CONFIG_VOLTAGE 3.3 [current_design]
+set_property CFGBVS VCCO [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports *]
+
+set_property PACKAGE_PIN P10 [get_ports {key_y[0]}]
+set_property PACKAGE_PIN R11 [get_ports {key_y[1]}]
+set_property PACKAGE_PIN T12 [get_ports {key_y[2]}]
+set_property PACKAGE_PIN R12 [get_ports {key_y[3]}]
+
+set_property PACKAGE_PIN T13 [get_ports {key_x[0]}]
+set_property PACKAGE_PIN R13 [get_ports {key_x[1]}]
+set_property PACKAGE_PIN T14 [get_ports {key_x[2]}]
+#set_property PACKAGE_PIN P14 [get_ports {key_x[3]}]
+
+set_property PACKAGE_PIN C16 [get_ports {digit1[0]}]
+set_property PACKAGE_PIN D15 [get_ports {digit1[1]}]
+set_property PACKAGE_PIN E15 [get_ports {digit1[2]}]
+set_property PACKAGE_PIN A14 [get_ports {digit1[3]}]
+set_property PACKAGE_PIN B15 [get_ports {digit1[4]}]
+set_property PACKAGE_PIN B16 [get_ports {digit1[5]}]
+set_property PACKAGE_PIN A15 [get_ports {digit1[6]}]
+#set_property PACKAGE_PIN D16 [get_ports {digit1[7]}]
+
+
+#set_property PACKAGE_PIN B11 [get_ports {digit10[0]}]
+#set_property PACKAGE_PIN A12 [get_ports {digit10[1]}]
+#set_property PACKAGE_PIN A13 [get_ports {digit10[2]}]
+#set_property PACKAGE_PIN C8 [get_ports {digit10[3]}]
+#set_property PACKAGE_PIN A9 [get_ports {digit10[4]}]
+#set_property PACKAGE_PIN B10 [get_ports {digit10[5]}]
+#set_property PACKAGE_PIN A10 [get_ports {digit10[6]}]
+#set_property PACKAGE_PIN B12 [get_ports {digit10[7]}]
+
+#set_property PACKAGE_PIN B6 [get_ports {digit100[0]}]
+#set_property PACKAGE_PIN C7 [get_ports {digit100[1]}]
+#set_property PACKAGE_PIN A8 [get_ports {digit100[2]}]
+#set_property PACKAGE_PIN A3 [get_ports {digit100[3]}]
+#set_property PACKAGE_PIN A4 [get_ports {digit100[4]}]
+#set_property PACKAGE_PIN A5 [get_ports {digit100[5]}]
+#set_property PACKAGE_PIN B5 [get_ports {digit100[6]}]
+#set_property PACKAGE_PIN B7 [get_ports {digit100[7]}]
+
+#set_property PACKAGE_PIN C1 [get_ports {digit1000[0]}]
+#set_property PACKAGE_PIN C2 [get_ports {digit1000[1]}]
+#set_property PACKAGE_PIN C3 [get_ports {digit1000[2]}]
+#set_property PACKAGE_PIN F2 [get_ports {digit1000[3]}]
+#set_property PACKAGE_PIN E1 [get_ports {digit1000[4]}]
+#set_property PACKAGE_PIN D3 [get_ports {digit1000[5]}]
+#set_property PACKAGE_PIN E2 [get_ports {digit1000[6]}]
+#set_property PACKAGE_PIN B1 [get_ports {digit1000[7]}]
+
+

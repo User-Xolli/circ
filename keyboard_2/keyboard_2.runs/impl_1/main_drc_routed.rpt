@@ -1,0 +1,68 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue May 28 00:09:43 2019
+| Host         : xolli-N552VW running 64-bit Linux Mint 19 Tara
+| Command      : report_drc -file main_drc_routed.rpt -pb main_drc_routed.pb -rpx main_drc_routed.rpx
+| Design       : main
+| Device       : xc7a15tftg256-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 6
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PDRC-153    | Warning  | Gated clock check                                           | 5          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net q[0]_i_2_n_0 is a gated clock net sourced by a combinational pin q[0]_i_2/O, cell q[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net q[1]_i_2_n_0 is a gated clock net sourced by a combinational pin q[1]_i_2/O, cell q[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net q[2]_i_2_n_0 is a gated clock net sourced by a combinational pin q[2]_i_2/O, cell q[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net q[3]_i_3_n_0 is a gated clock net sourced by a combinational pin q[3]_i_3/O, cell q[3]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net zero is a gated clock net sourced by a combinational pin q[3]_i_1/O, cell q[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT q[3]_i_1 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
+q_reg[0]/F1 (in q_reg[0] macro), q_reg[0]/F2 (in q_reg[0] macro), q_reg[0]_P, q_reg[1]/F1 (in q_reg[1] macro), q_reg[1]/F2 (in q_reg[1] macro), q_reg[1]_P, q_reg[2]/F1 (in q_reg[2] macro), q_reg[2]/F2 (in q_reg[2] macro), q_reg[2]_P, q_reg[3]/F1 (in q_reg[3] macro), q_reg[3]/F2 (in q_reg[3] macro), q_reg[3]_P
+Related violations: <none>
+
+

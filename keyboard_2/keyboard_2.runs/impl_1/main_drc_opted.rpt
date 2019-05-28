@@ -1,0 +1,42 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue May 28 00:09:22 2019
+| Host         : xolli-N552VW running 64-bit Linux Mint 19 Tara
+| Command      : report_drc -file main_drc_opted.rpt -pb main_drc_opted.pb -rpx main_drc_opted.rpx
+| Design       : main
+| Device       : xc7a15tftg256-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT q[3]_i_1 is driving clock pin of 12 cells. This could lead to large hold time violations. Involved cells are:
+q_reg[0]/F1 (in q_reg[0] macro), q_reg[0]/F2 (in q_reg[0] macro), q_reg[0]_P, q_reg[1]/F1 (in q_reg[1] macro), q_reg[1]/F2 (in q_reg[1] macro), q_reg[1]_P, q_reg[2]/F1 (in q_reg[2] macro), q_reg[2]/F2 (in q_reg[2] macro), q_reg[2]_P, q_reg[3]/F1 (in q_reg[3] macro), q_reg[3]/F2 (in q_reg[3] macro), q_reg[3]_P
+Related violations: <none>
+
+
